@@ -3,15 +3,379 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./css/main.css" />
-
     <title>Common Playground Perugia</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
-    <h1>Common Playground Perugia</h1>
+    <div class="page" id="page">
+    <header class="site-header">
+      <div class="site-logo">
+        <img
+          src="./assets/svg/logo.svg"
+          alt="Common Playground Perugia"
+          width="399"
+          height="200"
+        />
+      </div>
+    </header>
 
+    <nav class="site-nav" aria-label="Navigazione principale">
+      <ul class="site-nav__list">
+        <li>
+          <a class="site-nav__link is-active" href="#section-home">Home</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="#section-eventi">Eventi</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="#section-cosa">Cosa</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="#section-metodo">Metodo</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="#section-governance">Governance</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="#section-newsletter">Newsletter</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="section-home" class="section section-home" data-nav-section>
+        <div class="hero">
+          <div class="hero__decor" aria-hidden="true">
+            <img
+              class="hero__obj hero__obj--01"
+              src="./assets/svg/obj_01.svg"
+              alt=""
+            />
+            <img
+              class="hero__obj hero__obj--02"
+              src="./assets/svg/obj_02.svg"
+              alt=""
+            />
+            <img
+              class="hero__obj hero__obj--03"
+              src="./assets/svg/obj_03.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="hero__title">
+            <span>Cosa—Qui</span>
+            <span>Programma</span>
+            <span>di riattivazione</span>
+            <span>degli spazi</span>
+            <span>pubblici</span>
+            <span>del Comune</span>
+            <span>di Perugia</span>
+          </h1>
+        </div>
+      </section>
+
+      <section id="section-eventi" class="section section-eventi" data-nav-section>
+        <div class="section__inner">
+          <h2 class="section-heading">Eventi</h2>
+
+          <div class="events">
+            <div class="events__track" tabindex="0" aria-label="Elenco eventi">
+              <article class="event-card" data-evento="01">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-01.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Giardinaggio per la Terza Età</h3>
+                <p class="event-card__meta">A cura di Semi-Urbani APS</p>
+              </article>
+
+              <article class="event-card" data-evento="02">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-02.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Book Club in Piazza del Bacio</h3>
+                <p class="event-card__meta">A cura di Grifon d’Oro</p>
+              </article>
+
+              <article class="event-card" data-evento="03">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-03.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Spazio ai Giovani Talenti</h3>
+                <p class="event-card__meta">A cura di Centro Servizi Giovani</p>
+              </article>
+
+              <article class="event-card" data-evento="04">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-04.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Gospel in Piazza del Bacio</h3>
+                <p class="event-card__meta">
+                  A cura del coro gospel Cantori Umbri
+                </p>
+              </article>
+
+              <article class="event-card" data-evento="05">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-05.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">
+                  Torneo di Scacchi Intergenerazionale
+                </h3>
+                <p class="event-card__meta">A cura del Centro la Baracca</p>
+              </article>
+
+              <article class="event-card" data-evento="02" aria-hidden="true">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-02.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Book Club in Piazza del Bacio</h3>
+                <p class="event-card__meta">A cura di Grifon d’Oro</p>
+              </article>
+
+              <article class="event-card" data-evento="03" aria-hidden="true">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-03.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Spazio ai Giovani Talenti</h3>
+                <p class="event-card__meta">A cura di Centro Servizi Giovani</p>
+              </article>
+
+              <article class="event-card" data-evento="04" aria-hidden="true">
+                <div class="event-card__media">
+                  <img
+                    class="anim-image"
+                    src="./assets/images/eventi-04.jpg"
+                    alt=""
+                    data-reveal="up"
+                  />
+                </div>
+                <h3 class="event-card__title">Gospel in Piazza del Bacio</h3>
+                <p class="event-card__meta">
+                  A cura del coro gospel Cantori Umbri
+                </p>
+              </article>
+            </div>
+
+            <div class="events__controls">
+              <button
+                class="events__arrow events__arrow--prev"
+                type="button"
+                aria-label="Scorri eventi a sinistra"
+              >
+                <img src="./assets/icons/arrow.svg" alt="" />
+              </button>
+
+              <span class="events__cta">Visualizza tutti gli eventi</span>
+
+              <button
+                class="events__arrow events__arrow--next"
+                type="button"
+                aria-label="Scorri eventi a destra"
+              >
+                <img src="./assets/icons/arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-cosa" class="section section-cosa" data-nav-section>
+        <div class="section__inner cosa">
+          <div class="cosa__media cosa__media--portrait">
+            <img
+              class="anim-image"
+              src="./assets/images/cosa-02.jpg"
+              alt=""
+              data-reveal="left"
+            />
+          </div>
+
+          <div class="cosa__content">
+            <h2 class="section-heading">Cosa</h2>
+            <div class="prose">
+              <p>
+                Common Playground Perugia è un progetto di rigenerazione urbana
+                che interpreta lo spazio pubblico come terreno comune di
+                incontro, sperimentazione e azione collettiva.
+              </p>
+              <p>
+                Il progetto si concentra su Fontivegge, e in particolare su
+                Piazza del Bacio e gli spazi intorno alla stazione ferroviaria:
+                un territorio attraversato ogni giorno da residenti, studenti,
+                lavoratori, viaggiatori e comunità di diversa provenienza.
+              </p>
+              <p>
+                Attraverso pratiche temporanee, collaborative e
+                interdisciplinari, Common Playground esplora nuovi modi di
+                abitare e attivare questi luoghi, mettendo in relazione design,
+                cultura, autocostruzione, economia di prossimità e
+                partecipazione civica.
+              </p>
+              <p>
+                L’obiettivo è trasformare gli spazi sottoutilizzati in luoghi
+                vivi, inclusivi e condivisi, sperimentando strumenti e processi
+                replicabili capaci di rafforzare le relazioni tra persone,
+                comunità e istituzioni.
+              </p>
+            </div>
+          </div>
+
+          <div class="cosa__media cosa__media--wide">
+            <img
+              class="anim-image"
+              src="./assets/images/cosa-01.jpg"
+              alt=""
+              data-reveal="left"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="section-metodo" class="section section-metodo" data-nav-section>
+        <div class="section__inner metodo">
+          <div class="metodo__intro">
+            <h2 class="section-heading">Metodo</h2>
+            <div class="prose">
+              <p>
+                Per Common Playground Perugia abbiamo adottato la metodologia
+                sviluppata da <strong>Temporiuso</strong> per il riuso temporaneo
+                e la rigenerazione degli spazi pubblici.
+              </p>
+              <p>
+                Il processo parte dall’analisi dei luoghi e dall’ascolto delle
+                comunità, per individuare bisogni, possibili usi e attività.
+                Questi elementi alimentano un percorso di co-design che integra
+                programmazione, dispositivi temporanei e forme di gestione
+                condivisa.
+              </p>
+              <p>
+                L’obiettivo è costruire un modello flessibile e replicabile,
+                capace di accompagnare la trasformazione degli spazi e di essere
+                adattato anche ad altre aree della città.
+              </p>
+            </div>
+          </div>
+
+          <div class="metodo__gallery">
+            <div class="metodo__media metodo__media--01">
+              <img
+                class="anim-image"
+                src="./assets/images/motodologia-02.jpeg"
+                alt=""
+                data-reveal="right"
+              />
+            </div>
+            <div class="metodo__media metodo__media--02">
+              <img
+                class="anim-image"
+                src="./assets/images/motodologia-03.jpg"
+                alt=""
+                data-reveal="up"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section-governance"
+        class="section section-governance"
+        data-nav-section
+      >
+        <div class="section__inner governance">
+          <div class="governance__diagram">
+            <img
+              class="anim-image"
+              src="./assets/images/governance-01.jpg"
+              alt="Schema di governance di Common Playground Perugia"
+              data-reveal="left"
+            />
+          </div>
+
+          <div class="governance__content">
+            <h2 class="section-heading">Governance</h2>
+            <div class="prose">
+              <p>
+                La governance di Common Playground Perugia si basa su un modello
+                condiviso tra istituzioni e attori territoriali. Una cabina di
+                regia, espressione dell’ente proprietario, avrà il compito di
+                coordinare linee guida, strumenti progettuali, identità visiva e
+                programmazione delle attività.
+              </p>
+              <p>
+                Il modello prevede inoltre momenti di confronto con le realtà
+                locali, una piattaforma digitale di dialogo, budget dedicati
+                all’animazione degli spazi e bandi periodici per l’assegnazione
+                della loro gestione, con l’obiettivo di garantire continuità,
+                trasparenza e partecipazione nel tempo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section-newsletter"
+        class="section section-newsletter"
+        data-nav-section
+      >
+        <div class="section__inner newsletter">
+          <h2 class="section-heading section-heading--center">Newsletter</h2>
+          <p class="newsletter__text">
+            Iscriviti alla nostra newsletter settimanale per rimanere aggiornato
+            sulle attività di Common Playground Perugia, scoprire incontri,
+            iniziative e nuove opportunità, e prendere parte ai processi di
+            confronto, progettazione e trasformazione degli spazi.
+          </p>
+
+          <div class="newsletter__fields" aria-hidden="true">
+            <div class="newsletter__field">Nome</div>
+            <div class="newsletter__field">Indirizzo email</div>
+          </div>
+
+          <span class="newsletter__submit">Iscriviti</span>
+        </div>
+      </section>
+    </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
